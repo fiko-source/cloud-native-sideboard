@@ -88,6 +88,34 @@ Die Erweiterung des Technologieumfangs hebt diese Startanforderung nicht auf. Au
 
 **Quellen:** PDF-Seiten 16 und 18.
 
+### 4.1 Serviceorientierte Architektur (mündliche Vorgabe)
+
+Die Anwendung muss gemäß der mündlichen Vorgabe von
+Prof. Dr. Uwe Breitenbücher aus der Vorlesung in mehrere
+fachlich getrennte Webservices aufgeteilt werden.
+
+Eine monolithische Anwendungsarchitektur ist nicht vorgesehen.
+
+Daraus ergeben sich folgende Anforderungen:
+
+- Die Anwendung muss aus mehreren eigenständigen Webservices bestehen.
+- Jeder Webservice soll eine klar abgegrenzte fachliche
+  Verantwortlichkeit besitzen.
+- Die Kommunikation zwischen den Webservices muss über
+  definierte Schnittstellen erfolgen.
+- Die Services sollen möglichst lose miteinander gekoppelt sein.
+- Die einzelnen Services müssen unabhängig voneinander
+  entwickelt und getestet werden können.
+- Das vollständige System muss über Docker Compose
+  automatisiert gestartet werden können.
+
+Die konkrete Aufteilung der Webservices sowie deren
+Kommunikation und Datenhaltung sind im Rahmen der
+Architekturkonzeption festzulegen und zu dokumentieren.
+
+**Quelle:** Mündliche Ergänzung von Prof. Dr. Uwe Breitenbücher
+im Rahmen der Vorlesung *Cloud-based Web Application Development*.
+
 ## 5. Projektarbeitsthemen und funktionale Anforderungen
 
 ### 5.1 Car Manufacturer
@@ -265,6 +293,9 @@ Die Funktionsprüfung sollte nach Möglichkeit mit dem Stand erfolgen, der tats�
 - [ ] Die zum gewählten Thema beschriebenen Funktionen sind umgesetzt; die Ausnahme für das AI-Feature ist berücksichtigt.
 - [ ] Eine Docker-Compose-Datei ist vorhanden.
 - [ ] Das gesamte System startet lokal auf einer laufenden Docker Engine mit `docker compose up` vollautomatisiert und funktionsfähig.
+- [ ] Die Anwendung ist in mehrere fachlich getrennte Webservices aufgeteilt.
+- [ ] Die Webservices besitzen klar definierte Verantwortlichkeiten und Schnittstellen.
+- [ ] Die Service-Aufteilung ist im Architekturdiagramm nachvollziehbar dargestellt.
 
 ### Abgabepaket und Organisation
 
